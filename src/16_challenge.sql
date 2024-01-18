@@ -3,7 +3,7 @@ CREATE TABLE songs(
   title VARCHAR(50) NOT NULL,
   duration_in_seconds INT NOT NULL,
   album_id INT NOT NULL,
-  FOREIGN KEY (album_id) REFERENCES albums (id)
+  FOREIGN KEY (album_id) REFERENCES albums(id)
 );
 
 INSERT INTO songs (title, duration_in_seconds, album_id) VALUES

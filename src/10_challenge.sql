@@ -16,7 +16,7 @@ CREATE TABLE albums(
   title VARCHAR(50) NOT NULL,
   release_year INT NOT NULL,
   artist_id INT NOT NULL,
-  FOREIGN KEY (artist_id) REFERENCES artists (id)
+  FOREIGN KEY (artist_id) REFERENCES artists(id)
 );
 
 INSERT INTO albums (title, release_year, artist_id) VALUES

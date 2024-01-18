@@ -18,7 +18,7 @@ CREATE TABLE users(
   birthday DATE NOT NULL,
   active BOOLEAN NOT NULL DEFAULT true,
   plan_id INT NOT NULL,
-  FOREIGN KEY (plan_id) REFERENCES plans (id)
+  FOREIGN KEY (plan_id) REFERENCES plans(id)
 );
 
 INSERT INTO users (full_name, email, birthday, active, plan_id) VALUES
